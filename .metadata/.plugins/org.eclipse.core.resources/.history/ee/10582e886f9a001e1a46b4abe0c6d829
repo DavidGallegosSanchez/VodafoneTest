@@ -1,0 +1,2 @@
+spring.application.name=missing-number-service
+server.port=8001

@@ -1,0 +1,35 @@
+package com.gallegos.vodafone.service;
+
+import org.springframework.stereotype.Service;
+
+import com.gallegos.vodafone.model.Output;
+
+@Service
+public class MissingNumberServiceImpl implements IMissingNumberService{
+
+	@Override
+	public Output calculate() {
+		return null;
+	}
+
+	@Override
+	public Output calculateSort() {
+		return null;
+	}
+
+	@Override
+	public Output calculateRandom() {
+		return null;
+	}
+
+	@Override
+	public Output calculateFibonacci() {
+		return null;
+	}
+
+	@Override
+	public Output missingNumbers() {
+		return null;
+	}
+
+}

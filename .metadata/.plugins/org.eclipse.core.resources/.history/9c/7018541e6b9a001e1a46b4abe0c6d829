@@ -1,0 +1,57 @@
+package com.gallegos.vodafone.service;
+
+import java.util.HashSet;
+
+import org.springframework.stereotype.Service;
+
+import com.gallegos.vodafone.model.Output;
+
+@Service
+public class MissingNumberServiceImpl implements IMissingNumberService{
+
+	@Override
+	public Output calculate() {
+		return null;
+	}
+
+	@Override
+	public Output calculateSort() {
+		return null;
+	}
+
+	@Override
+	public Output calculateRandom() {
+		return null;
+	}
+
+	@Override
+	public Output calculateFibonacci() {
+		return null;
+	}
+
+	@Override
+	public Output missingNumbers() {
+		return null;
+	}
+	
+	public static int findMissingNumber(int[] arr, int n) {
+		HashSet<Integer> hashSet = new HashSet<>(); 
+		      // Add all elements of array to hashset
+		    for (int i = 0; i < n-1; i++) {
+		        hashSet.add(arr[i]);
+		    }
+		 
+		    // Check each integer from 1 to n
+		    for (int i = 1; i <= n; i++) {
+		        // If integer is not in hashset, it is the missing integer
+		        if (!hashSet.contains(i)) {
+		            return i;
+		        }
+		    }
+		 
+		    // If no integer is missing, return n+1
+		    return n+1;
+	}
+	
+
+}

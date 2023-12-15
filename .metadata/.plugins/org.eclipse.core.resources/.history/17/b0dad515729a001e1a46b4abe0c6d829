@@ -1,0 +1,58 @@
+package com.gallegos.vodafone.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.gallegos.vodafone.model.ElementsLits;
+import com.gallegos.vodafone.model.Output;
+import com.gallegos.vodafone.service.IMissingNumberService;
+
+@RestController
+public class MissingNumberController {
+	
+	static final String URL = "/api/v1";
+	
+	static final String CALCULATE = "/api/v1/calculate";
+	
+	static final String CALCULATE_SORT = "/api/v1/calculate_sort";
+	
+	static final String CALCULATE_RANDOM = "/api/v1/calculate_random";
+	
+	static final String CALCULATE_FIBONACCI = "/api/v1/calculate_fibonachi";
+	
+	static final String MISSING_NUMBERS = "/api/v1/missing_numbers";
+	
+	@Autowired
+	private IMissingNumberService missingNumberService;
+	
+	
+	@PostMapping(MissingNumberController.CALCULATE)
+	public Output calculate(@RequestBody ElementsLits elementsLits) {
+		return missingNumberService.calculate(elementsLits);
+	}
+	
+	@GetMapping(MissingNumberController.CALCULATE_SORT)
+	public Output calculateSort() {
+		return missingNumberService.calculateSort();
+	}
+
+	@GetMapping(MissingNumberController.CALCULATE_RANDOM)
+	public Output calculateRandom() {
+		return missingNumberService.calculateRandom();
+	}
+
+	@GetMapping(MissingNumberController.CALCULATE_FIBONACCI)
+	public Output calculateFibonacci() {
+		return missingNumberService.calculateFibonacci();
+	}
+
+	@GetMapping(MissingNumberController.MISSING_NUMBERS)
+	public Output missingNumbers() {
+		return missingNumberService.missingNumbers();
+	}
+}

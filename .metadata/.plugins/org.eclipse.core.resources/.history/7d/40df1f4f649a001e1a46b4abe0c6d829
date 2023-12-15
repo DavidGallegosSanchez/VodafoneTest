@@ -1,0 +1,20 @@
+package com.gallegos.vodafone.controller;
+
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class MissingNumberController {
+	
+	static final String CALCULATE = "/api/v1/calculate";
+	
+	static final String CALCULATE_SORT = "/api/v1/calculate_sort";
+	
+	static final String CALCULATE_RANDOM = "/api/v1/calculate_random";
+	
+	static final String CALCULATE_FIBONACCI = "/api/v1/calculate_fibonachi";
+	
+	static final String MISSING_NUMBERS = "/api/v1/missing_numbers";
+	
+	
+
+}

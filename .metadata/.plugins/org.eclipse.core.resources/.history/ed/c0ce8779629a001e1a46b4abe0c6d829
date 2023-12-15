@@ -1,0 +1,6 @@
+package com.gallegos.vodafone.model.entity;
+
+
+public class Output {
+
+}

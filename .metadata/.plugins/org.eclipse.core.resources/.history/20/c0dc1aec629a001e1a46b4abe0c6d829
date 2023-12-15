@@ -1,0 +1,7 @@
+package com.gallegos.vodafone.service;
+
+public interface IMissingNumberService {
+	
+	
+
+}

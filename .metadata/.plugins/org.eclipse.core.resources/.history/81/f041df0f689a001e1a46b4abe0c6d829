@@ -1,0 +1,17 @@
+package com.gallegos.vodafone.service;
+
+import com.gallegos.vodafone.model.Output;
+
+public interface IMissingNumberService {
+	
+	public Output calculate();
+	
+	public Output calculateSort();
+	
+	public Output calculateRandom();
+	
+	public Output calculateFibonacci();
+	
+	public Output missingNumbers();
+
+}

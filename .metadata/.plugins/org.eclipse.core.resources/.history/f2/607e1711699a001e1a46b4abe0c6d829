@@ -1,0 +1,41 @@
+package com.gallegos.vodafone.service;
+
+
+import com.gallegos.vodafone.model.ElementsLits;
+import com.gallegos.vodafone.model.Output;
+
+public interface IMissingNumberService {
+	
+	/**
+	* Calculate the missing number in a list
+	* @return Output object.
+	*/	
+	public Output calculate(ElementsLits elementsLits);
+	
+	/**
+	* Calculate the missing number in an unordered list and return both the missing
+	* number and the sorted list.
+	* @return Output object
+	*/
+	public Output calculateSort();
+	
+	/**
+	* Calculates the result of the missing value in a random list that it will return.
+	* @return Output object
+	*/
+	public Output calculateRandom();
+	
+	/**
+	* Calculate the fibonacci sequence up to the given number and return that sequence with random
+	* order but with the given number in the center.
+	* @return Output object
+	*/
+	public Output calculateFibonacci();
+	
+	/**
+	* List the last N calculations made
+	* @return Output object
+	*/
+	public Output missingNumbers();
+
+}

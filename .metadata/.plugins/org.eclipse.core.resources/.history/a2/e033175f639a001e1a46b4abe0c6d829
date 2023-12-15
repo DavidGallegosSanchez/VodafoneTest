@@ -1,0 +1,9 @@
+package com.gallegos.vodafone.service;
+
+import com.gallegos.vodafone.model.entity.Output;
+
+public interface IMissingNumberService {
+	
+	public Output calculate();
+
+}

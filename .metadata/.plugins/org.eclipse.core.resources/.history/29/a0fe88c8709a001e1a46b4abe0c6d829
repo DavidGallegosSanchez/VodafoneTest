@@ -1,0 +1,23 @@
+package com.gallegos.vodafone.model;
+
+import java.util.List;
+
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
+public class ElementsLits {
+
+	private List<Integer> elements;
+
+	public List<Integer> getElements() {
+		return elements;
+	}
+
+	public void setElements(List<Integer> elements) {
+		this.elements = elements;
+	}
+	
+	
+}
