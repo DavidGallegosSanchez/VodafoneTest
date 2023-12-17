@@ -81,12 +81,13 @@ class MissingNumberServiceTest {
     void calculateSortWrongTest() throws MissingNumberException {
         //Given
         String sortType = "Wrong";
+        List<Integer> elementsList = List.of(1,2,3,4,5,6);
 
         //When
 
         //Then
         Assertions.assertThrows(MissingNumberException.class, () -> {
-            missingNumberService.calculateSort(List.of(1,3,2,6,5), sortType);
+            missingNumberService.calculateSort(elementsList, sortType);
         });
     }
 
@@ -132,6 +133,17 @@ class MissingNumberServiceTest {
         Assertions.assertEquals(2, orderList.size(), "Order list should contain 2 values.");
     }
 
+    @Test
+    void missingNumbersNoOrderStoredTest() throws MissingNumberException {
+        //Given
+
+        //When
+
+        //Then
+        Assertions.assertThrows(MissingNumberException.class, () -> {
+            missingNumberService.missingNumbers(2);
+        });
+    }
     private ElementsList generateElementsList(){
         ElementsList elementsList = new ElementsList();
         elementsList.setList(List.of(1,3,2,6,5));

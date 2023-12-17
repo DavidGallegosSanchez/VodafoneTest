@@ -4,9 +4,11 @@ import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.gallegos.vodafone.model.ElementsList;
@@ -17,19 +19,21 @@ import java.util.List;
 
 
 @RestController
+@RequestMapping(MissingNumberController.URL)
 public class MissingNumberController {
 
 	private static final Logger logger = LogManager.getLogger(MissingNumberController.class);
 
-	static final String CALCULATE = "/api/v1/calculate";
+	static final String URL = "/api/v1";
+	static final String CALCULATE = "/calculate";
 	
-	static final String CALCULATE_SORT = "/api/v1/calculate_sort";
+	static final String CALCULATE_SORT = "/calculate_sort";
 	
-	static final String CALCULATE_RANDOM = "/api/v1/calculate_random";
+	static final String CALCULATE_RANDOM = "/calculate_random";
 	
-	static final String CALCULATE_FIBONACCI = "/api/v1/calculate_fibonacci";
+	static final String CALCULATE_FIBONACCI = "/calculate_fibonacci";
 	
-	static final String MISSING_NUMBERS = "/api/v1/missing_numbers";
+	static final String MISSING_NUMBERS = "/missing_numbers";
 
 	static final String MISSING_NUMBER_OUT = "missingNumber:";
 	
@@ -84,12 +88,12 @@ public class MissingNumberController {
 
 	@PostMapping(MissingNumberController.MISSING_NUMBERS)
 	public ResponseEntity<String> missingNumbers(@RequestBody ElementsList elementsList) {
-		logger.info("Calculating the last {} List executed", elementsList.getLastCalculations());
+		logger.info("Calculating the last {} orders executed", elementsList.getLastCalculations());
 		long startTime = System.nanoTime();
 		List<Order> out = missingNumberService.missingNumbers(elementsList.getLastCalculations());
 
 		long endTime = System.nanoTime();
-		logger.info("Last {} List executed in {} seconds.", elementsList.getLastCalculations(),(double)(endTime - startTime)/1000000000);
-		return ResponseEntity.ok().body(out.toString());
+		logger.info("Last {} orders executed in {} seconds.", elementsList.getLastCalculations(),(double)(endTime - startTime)/1000000000);
+		return ResponseEntity.status(HttpStatus.OK).body(out.toString());
 	}
 }

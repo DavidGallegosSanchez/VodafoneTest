@@ -92,7 +92,14 @@ public class MissingNumberServiceImpl implements IMissingNumberService{
 
 	@Override
 	public List<Order> missingNumbers(Integer lastCalculations) {
-		return orderRepository.getOrderDesc().subList(0, lastCalculations);
+
+		List<Order> orders = orderRepository.getOrderDesc();
+
+		if(orders.size() < lastCalculations){
+			throw new MissingNumberException("There are fewer orders stored than you are requesting.");
+		}
+
+		return orders.subList(0, lastCalculations);
 	}
 	
 	public static int findMissingNumber(List<Integer> hashSet, int n) {

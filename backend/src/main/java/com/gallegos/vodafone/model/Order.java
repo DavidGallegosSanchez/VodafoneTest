@@ -5,6 +5,7 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import org.hibernate.annotations.Generated;
 
 import java.time.LocalDateTime;
 
@@ -20,6 +21,10 @@ public class Order {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "Id_Order")
 	private Long id;
+
+	@Generated()
+	@Column(name = "Order_Num", columnDefinition = "serial", updatable = false)
+	private int orderNum;
 
 	@Column(name = "Create_At")
 	private LocalDateTime createAt;
@@ -38,7 +43,7 @@ public class Order {
 
 	@Override
 	public String toString() {
-		return "\n{order: " + id + ",\n" +
+		return "\n{order: " + orderNum + ",\n" +
 				(missingNumber!=null ? " missingNumber=" + missingNumber  + "\n": "") +
 				(originalList!=null ? " originalList='" + originalList + '\'' + "\n" : "") +
 				(sortList!=null ? " sortList='" + sortList + '\'' + "\n" : "") +
