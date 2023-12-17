@@ -136,12 +136,14 @@ class MissingNumberServiceTest {
     @Test
     void missingNumbersNoOrderStoredTest() throws MissingNumberException {
         //Given
+        ElementsList elementsList = generateElementsList();
+        missingNumberService.calculate(elementsList); // Order 1
 
         //When
 
         //Then
         Assertions.assertThrows(MissingNumberException.class, () -> {
-            missingNumberService.missingNumbers(2);
+            missingNumberService.missingNumbers(29);
         });
     }
     private ElementsList generateElementsList(){

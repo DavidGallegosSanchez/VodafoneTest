@@ -43,6 +43,6 @@ public interface IMissingNumberService {
 	* @param lastCalculations Value indicating the number of the last orders made
 	* @return Output object with the list of the specified last orders made
 	*/
-	public List<Order> missingNumbers(Integer lastCalculations);
+	public List<Order> missingNumbers(Integer lastCalculations) throws MissingNumberException;
 
 }

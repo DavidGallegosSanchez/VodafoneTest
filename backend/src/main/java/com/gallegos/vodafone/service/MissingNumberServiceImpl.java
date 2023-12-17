@@ -91,7 +91,7 @@ public class MissingNumberServiceImpl implements IMissingNumberService{
 	}
 
 	@Override
-	public List<Order> missingNumbers(Integer lastCalculations) {
+	public List<Order> missingNumbers(Integer lastCalculations) throws MissingNumberException{
 
 		List<Order> orders = orderRepository.getOrderDesc();
 

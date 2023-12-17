@@ -1,0 +1,38 @@
+2023-12-17T18:23:11.682+01:00  INFO 19496 --- [missing-number-service] [restartedMain] c.g.v.VodafoneApplication                : Starting VodafoneApplication using Java 17.0.8 with PID 19496 (C:\Project\Vodafone\backend\target\classes started by dgs in C:\Project\Vodafone\backend)
+2023-12-17T18:23:11.688+01:00  INFO 19496 --- [missing-number-service] [restartedMain] c.g.v.VodafoneApplication                : No active profile set, falling back to 1 default profile: "default"
+2023-12-17T18:23:11.718+01:00  INFO 19496 --- [missing-number-service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-12-17T18:23:11.728+01:00  INFO 19496 --- [missing-number-service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-12-17T18:23:12.161+01:00  INFO 19496 --- [missing-number-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-17T18:23:12.196+01:00  INFO 19496 --- [missing-number-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 30 ms. Found 1 JPA repository interface.
+2023-12-17T18:23:12.550+01:00  INFO 19496 --- [missing-number-service] [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port 8081 (http)
+2023-12-17T18:23:12.558+01:00  INFO 19496 --- [missing-number-service] [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2023-12-17T18:23:12.558+01:00  INFO 19496 --- [missing-number-service] [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.16]
+2023-12-17T18:23:12.592+01:00  INFO 19496 --- [missing-number-service] [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2023-12-17T18:23:12.593+01:00  INFO 19496 --- [missing-number-service] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 864 ms
+2023-12-17T18:23:12.629+01:00  INFO 19496 --- [missing-number-service] [restartedMain] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2023-12-17T18:23:12.763+01:00  INFO 19496 --- [missing-number-service] [restartedMain] c.z.h.p.HikariPool                       : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:20f940fa-de10-475f-a617-549345c60487 user=SA
+2023-12-17T18:23:12.765+01:00  INFO 19496 --- [missing-number-service] [restartedMain] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2023-12-17T18:23:12.774+01:00  INFO 19496 --- [missing-number-service] [restartedMain] o.s.b.a.h.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:20f940fa-de10-475f-a617-549345c60487'
+2023-12-17T18:23:12.874+01:00  INFO 19496 --- [missing-number-service] [restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-17T18:23:12.912+01:00  INFO 19496 --- [missing-number-service] [restartedMain] o.h.Version                              : HHH000412: Hibernate ORM core version 6.3.1.Final
+2023-12-17T18:23:12.938+01:00  INFO 19496 --- [missing-number-service] [restartedMain] o.h.c.i.RegionFactoryInitiator           : HHH000026: Second-level cache disabled
+2023-12-17T18:23:13.110+01:00  INFO 19496 --- [missing-number-service] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-12-17T18:23:13.717+01:00  INFO 19496 --- [missing-number-service] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2023-12-17T18:23:13.745+01:00  INFO 19496 --- [missing-number-service] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-17T18:23:13.904+01:00  INFO 19496 --- [missing-number-service] [restartedMain] o.s.d.j.r.q.QueryEnhancerFactory         : Hibernate is in classpath; If applicable, HQL parser will be used.
+2023-12-17T18:23:14.139+01:00  WARN 19496 --- [missing-number-service] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-17T18:23:14.348+01:00  INFO 19496 --- [missing-number-service] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-12-17T18:23:14.379+01:00  INFO 19496 --- [missing-number-service] [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port 8081 (http) with context path ''
+2023-12-17T18:23:14.385+01:00  INFO 19496 --- [missing-number-service] [restartedMain] c.g.v.VodafoneApplication                : Started VodafoneApplication in 3.084 seconds (process running for 3.723)
+2023-12-17T18:23:18.054+01:00  INFO 19496 --- [missing-number-service] [http-nio-8081-exec-2] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-17T18:23:18.055+01:00  INFO 19496 --- [missing-number-service] [http-nio-8081-exec-2] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2023-12-17T18:23:18.056+01:00  INFO 19496 --- [missing-number-service] [http-nio-8081-exec-2] o.s.w.s.DispatcherServlet                : Completed initialization in 0 ms
+2023-12-17T18:23:18.131+01:00  INFO 19496 --- [missing-number-service] [http-nio-8081-exec-2] c.g.v.c.MissingNumberController          : Calculating the missing number in the list
+2023-12-17T18:23:18.213+01:00  INFO 19496 --- [missing-number-service] [http-nio-8081-exec-2] c.g.v.c.MissingNumberController          : Missing number in the list calculated in 0.0811065 seconds.
+2023-12-17T18:23:19.925+01:00  INFO 19496 --- [missing-number-service] [http-nio-8081-exec-6] c.g.v.c.MissingNumberController          : Calculating the missing number in the list
+2023-12-17T18:23:19.927+01:00  INFO 19496 --- [missing-number-service] [http-nio-8081-exec-6] c.g.v.c.MissingNumberController          : Missing number in the list calculated in 0.0013465 seconds.
+2023-12-17T18:42:36.723+01:00  INFO 19496 --- [missing-number-service] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 9 class path changes (0 additions, 8 deletions, 1 modification)
+2023-12-17T18:42:36.748+01:00  INFO 19496 --- [missing-number-service] [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-17T18:42:36.756+01:00  WARN 19496 --- [missing-number-service] [Thread-5] o.s.b.f.s.DisposableBeanAdapter          : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2023-12-17T18:42:36.757+01:00  INFO 19496 --- [missing-number-service] [Thread-5] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2023-12-17T18:42:36.760+01:00  INFO 19496 --- [missing-number-service] [Thread-5] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
