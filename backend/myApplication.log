@@ -1248,3 +1248,258 @@
 2023-12-18T11:47:18.749+01:00  INFO 27136 --- [missing-number-service] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2023-12-18T11:47:18.753+01:00  INFO 27136 --- [missing-number-service] [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
 2023-12-18T11:47:18.755+01:00  INFO 27136 --- [missing-number-service] [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2023-12-19T09:12:13.611+01:00  INFO 29260 --- [missing-number-service] [main] c.g.v.s.MissingNumberServiceTest         : Starting MissingNumberServiceTest using Java 17.0.8 with PID 29260 (started by dgs in C:\Project\Vodafone\backend)
+2023-12-19T09:12:13.621+01:00  INFO 29260 --- [missing-number-service] [main] c.g.v.s.MissingNumberServiceTest         : No active profile set, falling back to 1 default profile: "default"
+2023-12-19T09:12:14.186+01:00  INFO 29260 --- [missing-number-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-19T09:12:14.247+01:00  INFO 29260 --- [missing-number-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 49 ms. Found 1 JPA repository interface.
+2023-12-19T09:12:14.692+01:00  INFO 29260 --- [missing-number-service] [main] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2023-12-19T09:12:14.908+01:00  INFO 29260 --- [missing-number-service] [main] c.z.h.p.HikariPool                       : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:c26c3a7c-8ae5-4bfb-8644-13c13844f013 user=SA
+2023-12-19T09:12:14.909+01:00  INFO 29260 --- [missing-number-service] [main] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2023-12-19T09:12:14.973+01:00  INFO 29260 --- [missing-number-service] [main] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-19T09:12:15.079+01:00  INFO 29260 --- [missing-number-service] [main] o.h.Version                              : HHH000412: Hibernate ORM core version 6.3.1.Final
+2023-12-19T09:12:15.146+01:00  INFO 29260 --- [missing-number-service] [main] o.h.c.i.RegionFactoryInitiator           : HHH000026: Second-level cache disabled
+2023-12-19T09:12:15.450+01:00  INFO 29260 --- [missing-number-service] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-12-19T09:12:16.191+01:00  INFO 29260 --- [missing-number-service] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2023-12-19T09:12:16.225+01:00  INFO 29260 --- [missing-number-service] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-19T09:12:16.509+01:00  INFO 29260 --- [missing-number-service] [main] o.s.d.j.r.q.QueryEnhancerFactory         : Hibernate is in classpath; If applicable, HQL parser will be used.
+2023-12-19T09:12:16.991+01:00  WARN 29260 --- [missing-number-service] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-19T09:12:17.397+01:00  INFO 29260 --- [missing-number-service] [main] c.g.v.s.MissingNumberServiceTest         : Started MissingNumberServiceTest in 4.124 seconds (process running for 5.381)
+2023-12-19T09:12:17.982+01:00 ERROR 29260 --- [missing-number-service] [main] c.g.v.s.MissingNumberServiceImpl         : Sort value should be low_high or high_low
+2023-12-19T09:12:18.066+01:00  WARN 29260 --- [missing-number-service] [main] c.g.v.s.MissingNumberServiceImpl         : There is no missing number in the list.
+2023-12-19T09:12:18.090+01:00  INFO 29260 --- [missing-number-service] [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.gallegos.vodafone.controller.MissingNumberControllerTest]: MissingNumberControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2023-12-19T09:12:18.097+01:00  INFO 29260 --- [missing-number-service] [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.gallegos.vodafone.VodafoneApplication for test class com.gallegos.vodafone.controller.MissingNumberControllerTest
+2023-12-19T09:12:18.110+01:00  INFO 29260 --- [missing-number-service] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2023-12-19T09:12:18.111+01:00  INFO 29260 --- [missing-number-service] [main] o.s.t.w.s.TestDispatcherServlet          : Initializing Servlet ''
+2023-12-19T09:12:18.113+01:00  INFO 29260 --- [missing-number-service] [main] o.s.t.w.s.TestDispatcherServlet          : Completed initialization in 0 ms
+2023-12-19T09:12:18.211+01:00  INFO 29260 --- [missing-number-service] [main] c.g.v.c.MissingNumberController          : Calculating the missing number in the list
+2023-12-19T09:12:18.213+01:00  INFO 29260 --- [missing-number-service] [main] c.g.v.c.MissingNumberController          : Missing number in the list calculated in 0.0023585 seconds.
+2023-12-19T09:12:18.226+01:00  INFO 29260 --- [missing-number-service] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2023-12-19T09:12:18.227+01:00  INFO 29260 --- [missing-number-service] [main] o.s.t.w.s.TestDispatcherServlet          : Initializing Servlet ''
+2023-12-19T09:12:18.228+01:00  INFO 29260 --- [missing-number-service] [main] o.s.t.w.s.TestDispatcherServlet          : Completed initialization in 1 ms
+2023-12-19T09:12:18.230+01:00  INFO 29260 --- [missing-number-service] [main] c.g.v.c.MissingNumberController          : Calculating the missing number in a random list generated
+2023-12-19T09:12:18.232+01:00  INFO 29260 --- [missing-number-service] [main] c.g.v.c.MissingNumberController          : Missing number in a random list generated in 0.0017517 seconds.
+2023-12-19T09:12:18.237+01:00  INFO 29260 --- [missing-number-service] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2023-12-19T09:12:18.237+01:00  INFO 29260 --- [missing-number-service] [main] o.s.t.w.s.TestDispatcherServlet          : Initializing Servlet ''
+2023-12-19T09:12:18.238+01:00  INFO 29260 --- [missing-number-service] [main] o.s.t.w.s.TestDispatcherServlet          : Completed initialization in 1 ms
+2023-12-19T09:12:18.239+01:00  INFO 29260 --- [missing-number-service] [main] c.g.v.c.MissingNumberController          : Calculating the missing number in the list and sorting the list
+2023-12-19T09:12:18.241+01:00  INFO 29260 --- [missing-number-service] [main] c.g.v.c.MissingNumberController          : Missing number in the list calculated and sorted list in 0.0021927 seconds.
+2023-12-19T09:12:18.246+01:00  INFO 29260 --- [missing-number-service] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2023-12-19T09:12:18.246+01:00  INFO 29260 --- [missing-number-service] [main] o.s.t.w.s.TestDispatcherServlet          : Initializing Servlet ''
+2023-12-19T09:12:18.246+01:00  INFO 29260 --- [missing-number-service] [main] o.s.t.w.s.TestDispatcherServlet          : Completed initialization in 0 ms
+2023-12-19T09:12:18.247+01:00  INFO 29260 --- [missing-number-service] [main] c.g.v.c.MissingNumberController          : Calculating the missing number in the list
+2023-12-19T09:12:18.250+01:00  INFO 29260 --- [missing-number-service] [main] c.g.v.c.MissingNumberController          : Missing number in the list calculated in 0.0021613 seconds.
+2023-12-19T09:12:18.251+01:00  INFO 29260 --- [missing-number-service] [main] c.g.v.c.MissingNumberController          : Calculating the last 1 orders executed
+2023-12-19T09:12:18.255+01:00  INFO 29260 --- [missing-number-service] [main] c.g.v.c.MissingNumberController          : Last 1 orders executed in 0.002785 seconds.
+2023-12-19T09:12:18.268+01:00  INFO 29260 --- [missing-number-service] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2023-12-19T09:12:18.268+01:00  INFO 29260 --- [missing-number-service] [main] o.s.t.w.s.TestDispatcherServlet          : Initializing Servlet ''
+2023-12-19T09:12:18.269+01:00  INFO 29260 --- [missing-number-service] [main] o.s.t.w.s.TestDispatcherServlet          : Completed initialization in 1 ms
+2023-12-19T09:12:18.270+01:00  INFO 29260 --- [missing-number-service] [main] c.g.v.c.MissingNumberController          : Calculating the fibonacci sequence
+2023-12-19T09:12:18.273+01:00  INFO 29260 --- [missing-number-service] [main] c.g.v.c.MissingNumberController          : Fibonacci sequence calculated in 0.002221 seconds.
+2023-12-19T09:12:18.282+01:00  INFO 29260 --- [missing-number-service] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-19T09:12:18.288+01:00  INFO 29260 --- [missing-number-service] [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2023-12-19T09:12:18.290+01:00  INFO 29260 --- [missing-number-service] [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2023-12-19T09:13:16.879+01:00  INFO 24220 --- [missing-number-service] [restartedMain] c.g.v.VodafoneApplication                : Starting VodafoneApplication using Java 17.0.8 with PID 24220 (C:\Project\Vodafone\backend\target\classes started by dgs in C:\Project\Vodafone\backend)
+2023-12-19T09:13:16.884+01:00  INFO 24220 --- [missing-number-service] [restartedMain] c.g.v.VodafoneApplication                : No active profile set, falling back to 1 default profile: "default"
+2023-12-19T09:13:16.910+01:00  INFO 24220 --- [missing-number-service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-12-19T09:13:16.911+01:00  INFO 24220 --- [missing-number-service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-12-19T09:13:17.304+01:00  INFO 24220 --- [missing-number-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-19T09:13:17.345+01:00  INFO 24220 --- [missing-number-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 36 ms. Found 1 JPA repository interface.
+2023-12-19T09:13:17.680+01:00  INFO 24220 --- [missing-number-service] [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port 8081 (http)
+2023-12-19T09:13:17.690+01:00  INFO 24220 --- [missing-number-service] [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2023-12-19T09:13:17.690+01:00  INFO 24220 --- [missing-number-service] [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.16]
+2023-12-19T09:13:17.728+01:00  INFO 24220 --- [missing-number-service] [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2023-12-19T09:13:17.729+01:00  INFO 24220 --- [missing-number-service] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 817 ms
+2023-12-19T09:13:17.754+01:00  INFO 24220 --- [missing-number-service] [restartedMain] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2023-12-19T09:13:17.890+01:00  INFO 24220 --- [missing-number-service] [restartedMain] c.z.h.p.HikariPool                       : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:ac554eb1-bf9f-45ed-9c58-1e1145ac66dc user=SA
+2023-12-19T09:13:17.892+01:00  INFO 24220 --- [missing-number-service] [restartedMain] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2023-12-19T09:13:17.907+01:00  INFO 24220 --- [missing-number-service] [restartedMain] o.s.b.a.h.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:ac554eb1-bf9f-45ed-9c58-1e1145ac66dc'
+2023-12-19T09:13:18.015+01:00  INFO 24220 --- [missing-number-service] [restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-19T09:13:18.058+01:00  INFO 24220 --- [missing-number-service] [restartedMain] o.h.Version                              : HHH000412: Hibernate ORM core version 6.3.1.Final
+2023-12-19T09:13:18.083+01:00  INFO 24220 --- [missing-number-service] [restartedMain] o.h.c.i.RegionFactoryInitiator           : HHH000026: Second-level cache disabled
+2023-12-19T09:13:18.249+01:00  INFO 24220 --- [missing-number-service] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-12-19T09:13:18.798+01:00  INFO 24220 --- [missing-number-service] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2023-12-19T09:13:18.823+01:00  INFO 24220 --- [missing-number-service] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-19T09:13:18.967+01:00  INFO 24220 --- [missing-number-service] [restartedMain] o.s.d.j.r.q.QueryEnhancerFactory         : Hibernate is in classpath; If applicable, HQL parser will be used.
+2023-12-19T09:13:19.194+01:00  WARN 24220 --- [missing-number-service] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-19T09:13:19.389+01:00  INFO 24220 --- [missing-number-service] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-12-19T09:13:19.421+01:00  INFO 24220 --- [missing-number-service] [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port 8081 (http) with context path ''
+2023-12-19T09:13:19.427+01:00  INFO 24220 --- [missing-number-service] [restartedMain] c.g.v.VodafoneApplication                : Started VodafoneApplication in 2.841 seconds (process running for 3.423)
+2023-12-19T09:13:44.013+01:00  INFO 24220 --- [missing-number-service] [http-nio-8081-exec-4] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-19T09:13:44.014+01:00  INFO 24220 --- [missing-number-service] [http-nio-8081-exec-4] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2023-12-19T09:13:44.015+01:00  INFO 24220 --- [missing-number-service] [http-nio-8081-exec-4] o.s.w.s.DispatcherServlet                : Completed initialization in 1 ms
+2023-12-19T09:13:44.072+01:00  INFO 24220 --- [missing-number-service] [http-nio-8081-exec-4] c.g.v.c.MissingNumberController          : Calculating the missing number in the list
+2023-12-19T09:13:44.159+01:00  INFO 24220 --- [missing-number-service] [http-nio-8081-exec-4] c.g.v.c.MissingNumberController          : Missing number in the list calculated in 0.0867451 seconds.
+2023-12-19T09:13:47.145+01:00  INFO 24220 --- [missing-number-service] [http-nio-8081-exec-2] c.g.v.c.MissingNumberController          : Calculating the missing number in the list and sorting the list
+2023-12-19T09:13:47.148+01:00  INFO 24220 --- [missing-number-service] [http-nio-8081-exec-2] c.g.v.c.MissingNumberController          : Missing number in the list calculated and sorted list in 0.0021272 seconds.
+2023-12-19T09:13:50.894+01:00  INFO 24220 --- [missing-number-service] [http-nio-8081-exec-8] c.g.v.c.MissingNumberController          : Calculating the missing number in the list and sorting the list
+2023-12-19T09:13:50.896+01:00  INFO 24220 --- [missing-number-service] [http-nio-8081-exec-8] c.g.v.c.MissingNumberController          : Missing number in the list calculated and sorted list in 0.0016673 seconds.
+2023-12-19T09:13:54.042+01:00  INFO 24220 --- [missing-number-service] [http-nio-8081-exec-3] c.g.v.c.MissingNumberController          : Calculating the missing number in the list and sorting the list
+2023-12-19T09:13:54.042+01:00 ERROR 24220 --- [missing-number-service] [http-nio-8081-exec-3] c.g.v.s.MissingNumberServiceImpl         : Sort value should be low_high or high_low
+2023-12-19T09:13:54.045+01:00 ERROR 24220 --- [missing-number-service] [http-nio-8081-exec-3] o.a.c.c.C.[.[.[.[dispatcherServlet]      : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: com.gallegos.vodafone.service.MissingNumberException: Sort value should be low_high or high_low] with root cause
+
+com.gallegos.vodafone.service.MissingNumberException: Sort value should be low_high or high_low
+	at com.gallegos.vodafone.service.MissingNumberServiceImpl.calculateSort(MissingNumberServiceImpl.java:56) ~[classes/:?]
+	at com.gallegos.vodafone.controller.MissingNumberController.calculateSort(MissingNumberController.java:59) ~[classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:254) ~[spring-web-6.1.1.jar:6.1.1]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:182) ~[spring-web-6.1.1.jar:6.1.1]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.1.jar:6.1.1]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:917) ~[spring-webmvc-6.1.1.jar:6.1.1]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:829) ~[spring-webmvc-6.1.1.jar:6.1.1]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.1.jar:6.1.1]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.1.jar:6.1.1]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.1.jar:6.1.1]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.1.jar:6.1.1]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.1.1.jar:6.1.1]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.16.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.1.jar:6.1.1]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.16.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.16.jar:10.1.16]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.1.jar:6.1.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.1.jar:6.1.1]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.1.jar:6.1.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.1.jar:6.1.1]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.1.jar:6.1.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.1.jar:6.1.1]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at java.lang.Thread.run(Thread.java:833) ~[?:?]
+
+2023-12-19T09:14:04.217+01:00  INFO 24220 --- [missing-number-service] [http-nio-8081-exec-10] c.g.v.c.MissingNumberController          : Calculating the missing number in a random list generated
+2023-12-19T09:14:04.222+01:00  INFO 24220 --- [missing-number-service] [http-nio-8081-exec-10] c.g.v.c.MissingNumberController          : Missing number in a random list generated in 0.0045513 seconds.
+2023-12-19T09:14:16.398+01:00  INFO 24220 --- [missing-number-service] [http-nio-8081-exec-5] c.g.v.c.MissingNumberController          : Calculating the fibonacci sequence
+2023-12-19T09:14:16.400+01:00  INFO 24220 --- [missing-number-service] [http-nio-8081-exec-5] c.g.v.c.MissingNumberController          : Fibonacci sequence calculated in 0.0016857 seconds.
+2023-12-19T09:14:23.342+01:00  INFO 24220 --- [missing-number-service] [http-nio-8081-exec-9] c.g.v.c.MissingNumberController          : Calculating the last 2 orders executed
+2023-12-19T09:14:23.376+01:00  INFO 24220 --- [missing-number-service] [http-nio-8081-exec-9] c.g.v.c.MissingNumberController          : Last 2 orders executed in 0.0348844 seconds.
+2023-12-19T09:15:02.005+01:00  INFO 24220 --- [missing-number-service] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 2 class path changes (0 additions, 2 deletions, 0 modifications)
+2023-12-19T09:15:02.021+01:00  INFO 24220 --- [missing-number-service] [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-19T09:15:02.025+01:00  WARN 24220 --- [missing-number-service] [Thread-5] o.s.b.f.s.DisposableBeanAdapter          : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2023-12-19T09:15:02.025+01:00  INFO 24220 --- [missing-number-service] [Thread-5] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2023-12-19T09:15:02.026+01:00  INFO 24220 --- [missing-number-service] [Thread-5] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2023-12-19T09:15:02.103+01:00  INFO 24220 --- [missing-number-service] [restartedMain] c.g.v.VodafoneApplication                : Starting VodafoneApplication using Java 17.0.8 with PID 24220 (C:\Project\Vodafone\backend\target\classes started by dgs in C:\Project\Vodafone\backend)
+2023-12-19T09:15:02.103+01:00  INFO 24220 --- [missing-number-service] [restartedMain] c.g.v.VodafoneApplication                : No active profile set, falling back to 1 default profile: "default"
+2023-12-19T09:15:02.221+01:00  INFO 24220 --- [missing-number-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-19T09:15:02.230+01:00  INFO 24220 --- [missing-number-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 1 JPA repository interface.
+2023-12-19T09:15:02.304+01:00  INFO 24220 --- [missing-number-service] [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port 8081 (http)
+2023-12-19T09:15:02.306+01:00  INFO 24220 --- [missing-number-service] [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2023-12-19T09:15:02.306+01:00  INFO 24220 --- [missing-number-service] [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.16]
+2023-12-19T09:15:02.324+01:00  INFO 24220 --- [missing-number-service] [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2023-12-19T09:15:02.324+01:00  INFO 24220 --- [missing-number-service] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 220 ms
+2023-12-19T09:15:02.334+01:00  INFO 24220 --- [missing-number-service] [restartedMain] c.z.h.HikariDataSource                   : HikariPool-2 - Starting...
+2023-12-19T09:15:02.336+01:00  INFO 24220 --- [missing-number-service] [restartedMain] c.z.h.p.HikariPool                       : HikariPool-2 - Added connection conn10: url=jdbc:h2:mem:53fb9dcd-53c8-4794-8eff-58bb3e92156c user=SA
+2023-12-19T09:15:02.337+01:00  INFO 24220 --- [missing-number-service] [restartedMain] c.z.h.HikariDataSource                   : HikariPool-2 - Start completed.
+2023-12-19T09:15:02.337+01:00  INFO 24220 --- [missing-number-service] [restartedMain] o.s.b.a.h.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:53fb9dcd-53c8-4794-8eff-58bb3e92156c'
+2023-12-19T09:15:02.354+01:00  INFO 24220 --- [missing-number-service] [restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-19T09:15:02.356+01:00  INFO 24220 --- [missing-number-service] [restartedMain] o.h.c.i.RegionFactoryInitiator           : HHH000026: Second-level cache disabled
+2023-12-19T09:15:02.361+01:00  INFO 24220 --- [missing-number-service] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-12-19T09:15:02.384+01:00  INFO 24220 --- [missing-number-service] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2023-12-19T09:15:02.386+01:00  INFO 24220 --- [missing-number-service] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-19T09:15:02.432+01:00  WARN 24220 --- [missing-number-service] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-19T09:15:02.499+01:00  INFO 24220 --- [missing-number-service] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-12-19T09:15:02.507+01:00  INFO 24220 --- [missing-number-service] [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port 8081 (http) with context path ''
+2023-12-19T09:15:02.510+01:00  INFO 24220 --- [missing-number-service] [restartedMain] c.g.v.VodafoneApplication                : Started VodafoneApplication in 0.438 seconds (process running for 106.506)
+2023-12-19T09:15:02.512+01:00  INFO 24220 --- [missing-number-service] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-12-19T09:15:03.672+01:00  INFO 20580 --- [missing-number-service] [main] c.g.v.s.MissingNumberServiceTest         : Starting MissingNumberServiceTest using Java 17.0.8 with PID 20580 (started by dgs in C:\Project\Vodafone\backend)
+2023-12-19T09:15:03.679+01:00  INFO 20580 --- [missing-number-service] [main] c.g.v.s.MissingNumberServiceTest         : No active profile set, falling back to 1 default profile: "default"
+2023-12-19T09:15:03.926+01:00  INFO 24220 --- [missing-number-service] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 2 class path changes (2 additions, 0 deletions, 0 modifications)
+2023-12-19T09:15:03.940+01:00  INFO 24220 --- [missing-number-service] [Thread-7] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-19T09:15:03.942+01:00  WARN 24220 --- [missing-number-service] [Thread-7] o.s.b.f.s.DisposableBeanAdapter          : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2023-12-19T09:15:03.943+01:00  INFO 24220 --- [missing-number-service] [Thread-7] c.z.h.HikariDataSource                   : HikariPool-2 - Shutdown initiated...
+2023-12-19T09:15:03.943+01:00  INFO 24220 --- [missing-number-service] [Thread-7] c.z.h.HikariDataSource                   : HikariPool-2 - Shutdown completed.
+2023-12-19T09:15:04.033+01:00  INFO 24220 --- [missing-number-service] [restartedMain] c.g.v.VodafoneApplication                : Starting VodafoneApplication using Java 17.0.8 with PID 24220 (C:\Project\Vodafone\backend\target\classes started by dgs in C:\Project\Vodafone\backend)
+2023-12-19T09:15:04.033+01:00  INFO 24220 --- [missing-number-service] [restartedMain] c.g.v.VodafoneApplication                : No active profile set, falling back to 1 default profile: "default"
+2023-12-19T09:15:04.134+01:00  INFO 24220 --- [missing-number-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-19T09:15:04.141+01:00  INFO 24220 --- [missing-number-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 1 JPA repository interface.
+2023-12-19T09:15:04.191+01:00  INFO 20580 --- [missing-number-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-19T09:15:04.199+01:00  INFO 24220 --- [missing-number-service] [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port 8081 (http)
+2023-12-19T09:15:04.200+01:00  INFO 24220 --- [missing-number-service] [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2023-12-19T09:15:04.201+01:00  INFO 24220 --- [missing-number-service] [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.16]
+2023-12-19T09:15:04.216+01:00  INFO 24220 --- [missing-number-service] [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2023-12-19T09:15:04.216+01:00  INFO 24220 --- [missing-number-service] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 182 ms
+2023-12-19T09:15:04.224+01:00  INFO 24220 --- [missing-number-service] [restartedMain] c.z.h.HikariDataSource                   : HikariPool-3 - Starting...
+2023-12-19T09:15:04.227+01:00  INFO 24220 --- [missing-number-service] [restartedMain] c.z.h.p.HikariPool                       : HikariPool-3 - Added connection conn20: url=jdbc:h2:mem:9ace8429-992d-402a-9c2a-84a42a98fd5e user=SA
+2023-12-19T09:15:04.228+01:00  INFO 24220 --- [missing-number-service] [restartedMain] c.z.h.HikariDataSource                   : HikariPool-3 - Start completed.
+2023-12-19T09:15:04.228+01:00  INFO 24220 --- [missing-number-service] [restartedMain] o.s.b.a.h.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:9ace8429-992d-402a-9c2a-84a42a98fd5e'
+2023-12-19T09:15:04.238+01:00  INFO 20580 --- [missing-number-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 38 ms. Found 1 JPA repository interface.
+2023-12-19T09:15:04.242+01:00  INFO 24220 --- [missing-number-service] [restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-19T09:15:04.244+01:00  INFO 24220 --- [missing-number-service] [restartedMain] o.h.c.i.RegionFactoryInitiator           : HHH000026: Second-level cache disabled
+2023-12-19T09:15:04.247+01:00  INFO 24220 --- [missing-number-service] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-12-19T09:15:04.268+01:00  INFO 24220 --- [missing-number-service] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2023-12-19T09:15:04.272+01:00  INFO 24220 --- [missing-number-service] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-19T09:15:04.318+01:00  WARN 24220 --- [missing-number-service] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-19T09:15:04.374+01:00  INFO 24220 --- [missing-number-service] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-12-19T09:15:04.381+01:00  INFO 24220 --- [missing-number-service] [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port 8081 (http) with context path ''
+2023-12-19T09:15:04.384+01:00  INFO 24220 --- [missing-number-service] [restartedMain] c.g.v.VodafoneApplication                : Started VodafoneApplication in 0.386 seconds (process running for 108.38)
+2023-12-19T09:15:04.385+01:00  INFO 24220 --- [missing-number-service] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-12-19T09:15:04.646+01:00  INFO 20580 --- [missing-number-service] [main] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2023-12-19T09:15:04.833+01:00  INFO 20580 --- [missing-number-service] [main] c.z.h.p.HikariPool                       : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:b058890a-f6ad-4d56-b5e9-efd86180be15 user=SA
+2023-12-19T09:15:04.835+01:00  INFO 20580 --- [missing-number-service] [main] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2023-12-19T09:15:04.910+01:00  INFO 20580 --- [missing-number-service] [main] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-19T09:15:05.027+01:00  INFO 20580 --- [missing-number-service] [main] o.h.Version                              : HHH000412: Hibernate ORM core version 6.3.1.Final
+2023-12-19T09:15:05.089+01:00  INFO 20580 --- [missing-number-service] [main] o.h.c.i.RegionFactoryInitiator           : HHH000026: Second-level cache disabled
+2023-12-19T09:15:05.338+01:00  INFO 20580 --- [missing-number-service] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-12-19T09:15:06.032+01:00  INFO 20580 --- [missing-number-service] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2023-12-19T09:15:06.061+01:00  INFO 20580 --- [missing-number-service] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-19T09:15:06.303+01:00  INFO 20580 --- [missing-number-service] [main] o.s.d.j.r.q.QueryEnhancerFactory         : Hibernate is in classpath; If applicable, HQL parser will be used.
+2023-12-19T09:15:06.780+01:00  WARN 20580 --- [missing-number-service] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-19T09:15:07.188+01:00  INFO 20580 --- [missing-number-service] [main] c.g.v.s.MissingNumberServiceTest         : Started MissingNumberServiceTest in 3.812 seconds (process running for 4.813)
+2023-12-19T09:15:07.782+01:00 ERROR 20580 --- [missing-number-service] [main] c.g.v.s.MissingNumberServiceImpl         : Sort value should be low_high or high_low
+2023-12-19T09:15:07.867+01:00  WARN 20580 --- [missing-number-service] [main] c.g.v.s.MissingNumberServiceImpl         : There is no missing number in the list.
+2023-12-19T09:15:07.888+01:00  INFO 20580 --- [missing-number-service] [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.gallegos.vodafone.controller.MissingNumberControllerTest]: MissingNumberControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2023-12-19T09:15:07.894+01:00  INFO 20580 --- [missing-number-service] [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.gallegos.vodafone.VodafoneApplication for test class com.gallegos.vodafone.controller.MissingNumberControllerTest
+2023-12-19T09:15:07.902+01:00  INFO 20580 --- [missing-number-service] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2023-12-19T09:15:07.902+01:00  INFO 20580 --- [missing-number-service] [main] o.s.t.w.s.TestDispatcherServlet          : Initializing Servlet ''
+2023-12-19T09:15:07.904+01:00  INFO 20580 --- [missing-number-service] [main] o.s.t.w.s.TestDispatcherServlet          : Completed initialization in 1 ms
+2023-12-19T09:15:07.978+01:00  INFO 20580 --- [missing-number-service] [main] c.g.v.c.MissingNumberController          : Calculating the missing number in the list
+2023-12-19T09:15:07.980+01:00  INFO 20580 --- [missing-number-service] [main] c.g.v.c.MissingNumberController          : Missing number in the list calculated in 0.001678 seconds.
+2023-12-19T09:15:07.992+01:00  INFO 20580 --- [missing-number-service] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2023-12-19T09:15:07.992+01:00  INFO 20580 --- [missing-number-service] [main] o.s.t.w.s.TestDispatcherServlet          : Initializing Servlet ''
+2023-12-19T09:15:07.993+01:00  INFO 20580 --- [missing-number-service] [main] o.s.t.w.s.TestDispatcherServlet          : Completed initialization in 1 ms
+2023-12-19T09:15:07.994+01:00  INFO 20580 --- [missing-number-service] [main] c.g.v.c.MissingNumberController          : Calculating the missing number in a random list generated
+2023-12-19T09:15:07.996+01:00  INFO 20580 --- [missing-number-service] [main] c.g.v.c.MissingNumberController          : Missing number in a random list generated in 0.0016694 seconds.
+2023-12-19T09:15:08.000+01:00  INFO 20580 --- [missing-number-service] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2023-12-19T09:15:08.000+01:00  INFO 20580 --- [missing-number-service] [main] o.s.t.w.s.TestDispatcherServlet          : Initializing Servlet ''
+2023-12-19T09:15:08.001+01:00  INFO 20580 --- [missing-number-service] [main] o.s.t.w.s.TestDispatcherServlet          : Completed initialization in 1 ms
+2023-12-19T09:15:08.002+01:00  INFO 20580 --- [missing-number-service] [main] c.g.v.c.MissingNumberController          : Calculating the missing number in the list and sorting the list
+2023-12-19T09:15:08.004+01:00  INFO 20580 --- [missing-number-service] [main] c.g.v.c.MissingNumberController          : Missing number in the list calculated and sorted list in 0.0017459 seconds.
+2023-12-19T09:15:08.008+01:00  INFO 20580 --- [missing-number-service] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2023-12-19T09:15:08.008+01:00  INFO 20580 --- [missing-number-service] [main] o.s.t.w.s.TestDispatcherServlet          : Initializing Servlet ''
+2023-12-19T09:15:08.009+01:00  INFO 20580 --- [missing-number-service] [main] o.s.t.w.s.TestDispatcherServlet          : Completed initialization in 1 ms
+2023-12-19T09:15:08.010+01:00  INFO 20580 --- [missing-number-service] [main] c.g.v.c.MissingNumberController          : Calculating the missing number in the list
+2023-12-19T09:15:08.013+01:00  INFO 20580 --- [missing-number-service] [main] c.g.v.c.MissingNumberController          : Missing number in the list calculated in 0.002203 seconds.
+2023-12-19T09:15:08.014+01:00  INFO 20580 --- [missing-number-service] [main] c.g.v.c.MissingNumberController          : Calculating the last 1 orders executed
+2023-12-19T09:15:08.017+01:00  INFO 20580 --- [missing-number-service] [main] c.g.v.c.MissingNumberController          : Last 1 orders executed in 0.0026151 seconds.
+2023-12-19T09:15:08.029+01:00  INFO 20580 --- [missing-number-service] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2023-12-19T09:15:08.029+01:00  INFO 20580 --- [missing-number-service] [main] o.s.t.w.s.TestDispatcherServlet          : Initializing Servlet ''
+2023-12-19T09:15:08.030+01:00  INFO 20580 --- [missing-number-service] [main] o.s.t.w.s.TestDispatcherServlet          : Completed initialization in 1 ms
+2023-12-19T09:15:08.031+01:00  INFO 20580 --- [missing-number-service] [main] c.g.v.c.MissingNumberController          : Calculating the fibonacci sequence
+2023-12-19T09:15:08.033+01:00  INFO 20580 --- [missing-number-service] [main] c.g.v.c.MissingNumberController          : Fibonacci sequence calculated in 0.0019121 seconds.
+2023-12-19T09:15:08.043+01:00  INFO 20580 --- [missing-number-service] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-19T09:15:08.049+01:00  INFO 20580 --- [missing-number-service] [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2023-12-19T09:15:08.050+01:00  INFO 20580 --- [missing-number-service] [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
