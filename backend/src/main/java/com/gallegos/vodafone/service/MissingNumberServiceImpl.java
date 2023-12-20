@@ -102,10 +102,10 @@ public class MissingNumberServiceImpl implements IMissingNumberService{
 		return orders.subList(0, lastCalculations);
 	}
 	
-	public static int findMissingNumber(List<Integer> hashSet, int n) {
+	public static int findMissingNumber(List<Integer> list, int n) {
 
 		for (int i = 1; i <= n; i++) {
-			if (!hashSet.contains(i)) {
+			if (!list.contains(i)) {
 				return i;
 			}
 		}
