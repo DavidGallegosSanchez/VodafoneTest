@@ -4,6 +4,7 @@ import java.time.LocalDateTime;
 import java.util.*;
 import java.util.stream.Collectors;
 
+import com.gallegos.vodafone.model.Calculate;
 import com.gallegos.vodafone.repository.IOrderRepository;
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
@@ -38,6 +39,19 @@ public class MissingNumberServiceImpl implements IMissingNumberService{
 		out.setCreateAt(LocalDateTime.now());
 
 		orderRepository.save(out);
+		return out;
+	}
+
+	@Override
+	public Calculate calculateMap(ElementsList elementsList) {
+
+		Calculate out = new Calculate();
+		int listLength = elementsList.getList().size();
+
+		List<Integer> listSorted = sortList(elementsList.getList());
+
+		out.setMissingNumber(findMissingNumber(listSorted,listLength));
+
 		return out;
 	}
 

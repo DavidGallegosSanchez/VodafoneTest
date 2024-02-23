@@ -1,5 +1,6 @@
 package com.gallegos.vodafone.service;
 
+import com.gallegos.vodafone.model.Calculate;
 import com.gallegos.vodafone.model.ElementsList;
 import com.gallegos.vodafone.model.Order;
 
@@ -13,6 +14,8 @@ public interface IMissingNumberService {
 	* @return Output object with missing number
 	*/	
 	public Order calculate(ElementsList elementsList);
+
+	public Calculate calculateMap(ElementsList elementsList);
 	
 	/**
 	* Calculate the missing number in an unordered list and return both the missing
