@@ -1,8 +1,5 @@
 package com.gallegos.vodafone.controller;
 
-import com.gallegos.vodafone.mapper.CalculateMapper;
-import com.gallegos.vodafone.model.Calculate;
-import com.gallegos.vodafone.model.dto.CalculateDto;
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
 
@@ -18,9 +15,7 @@ import com.gallegos.vodafone.model.ElementsList;
 import com.gallegos.vodafone.model.Order;
 import com.gallegos.vodafone.service.IMissingNumberService;
 
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 
 @RestController
@@ -31,8 +26,6 @@ public class MissingNumberController {
 
 	static final String URL = "/api/v1";
 	static final String CALCULATE = "/calculate";
-
-	static final String CALCULATE_MAP = "/calculateMap";
 	
 	static final String CALCULATE_SORT = "/calculate_sort";
 	
@@ -46,22 +39,6 @@ public class MissingNumberController {
 	
 	@Autowired
 	private IMissingNumberService missingNumberService;
-
-	@Autowired
-	private CalculateMapper mapper;
-
-	@PostMapping(MissingNumberController.CALCULATE_MAP)
-	public CalculateDto calculateMap(@RequestBody ElementsList elementsList) {
-		logger.info("Calculating the missing number in the list");
-		long startTime = System.nanoTime();
-
-		CalculateDto calculateDto = mapper.toDto(missingNumberService.calculateMap(elementsList));
-
-		long endTime = System.nanoTime();
-		logger.info("Missing number in the list calculated in {} seconds.", (double)(endTime - startTime)/1000000000 );
-
-		return calculateDto;
-	}
 	
 	@PostMapping(MissingNumberController.CALCULATE)
 	public ResponseEntity<String> calculate(@RequestBody ElementsList elementsList) {
@@ -105,7 +82,6 @@ public class MissingNumberController {
 		logger.info("Fibonacci sequence calculated in {} seconds.",(double)(endTime - startTime)/1000000000);
 
 		return ResponseEntity.ok().body("Fibonacci_List:" + out.getFibonacciList());
-
 	}
 
 	@PostMapping(MissingNumberController.MISSING_NUMBERS)
