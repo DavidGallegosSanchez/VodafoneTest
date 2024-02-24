@@ -40,7 +40,6 @@ public class MissingNumberController {
 	@Autowired
 	private IMissingNumberService missingNumberService;
 	
-	
 	@PostMapping(MissingNumberController.CALCULATE)
 	public ResponseEntity<String> calculate(@RequestBody ElementsList elementsList) {
 		logger.info("Calculating the missing number in the list");
@@ -83,7 +82,6 @@ public class MissingNumberController {
 		logger.info("Fibonacci sequence calculated in {} seconds.",(double)(endTime - startTime)/1000000000);
 
 		return ResponseEntity.ok().body("Fibonacci_List:" + out.getFibonacciList());
-
 	}
 
 	@PostMapping(MissingNumberController.MISSING_NUMBERS)
